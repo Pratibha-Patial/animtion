@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+#main
+{
+background-color:red;
+width:300px;
+height:300px;
+position:relative;
+}
+</style>
+</head>
+<body>
+<div id="main"></div>
+<button onclick="start()">start</button>
+<script>
+var ele=document.getElementById("main");
+var pos=0;
+var id;
+function start()
+{
+setInterval(move,100);
+}
+function move()
+{
+pos=pos+10;
+ele.style.left=pos+'px';
+}
+</script>
+</body>
+</html>
